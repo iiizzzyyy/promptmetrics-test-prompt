@@ -1,0 +1,20 @@
+{
+  "name": "welcome",
+  "version": "1.1.0",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a friendly assistant."
+    },
+    {
+      "role": "user",
+      "content": "Hello {{name}}! Welcome aboard."
+    }
+  ],
+  "variables": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
