@@ -1,0 +1,20 @@
+{
+  "name": "assistant-test",
+  "version": "1.0.0",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is {{topic}}?"
+    },
+    {
+      "role": "assistant",
+      "content": "Let me tell you about {{topic}}."
+    }
+  ],
+  "variables": {
+    "topic": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
