@@ -1,0 +1,28 @@
+{
+  "name": "greeting",
+  "version": "1.0.0",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a {{role}}."
+    },
+    {
+      "role": "user",
+      "content": "Hello {{name}}! You are {{age}} years old."
+    }
+  ],
+  "variables": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "age": {
+      "type": "number",
+      "required": true
+    },
+    "role": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
