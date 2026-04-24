@@ -1,0 +1,41 @@
+{
+  "name": "onboarding",
+  "version": "1.0.0",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant."
+    },
+    {
+      "role": "user",
+      "content": "Welcome {{name}}! Your email is {{email}}."
+    }
+  ],
+  "variables": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "model_config": {
+    "model": "gpt-4o",
+    "temperature": 0.7
+  },
+  "ollama": {
+    "options": {
+      "temperature": 0.8,
+      "num_ctx": 4096,
+      "seed": 42
+    },
+    "keep_alive": "5m",
+    "format": "json"
+  },
+  "tags": [
+    "onboarding",
+    "user"
+  ]
+}
