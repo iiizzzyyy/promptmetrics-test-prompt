@@ -1,0 +1,10 @@
+{
+  "name": "transaction-prompt",
+  "version": "1.0.0",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Hello"
+    }
+  ]
+}
